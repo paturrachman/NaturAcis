@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">NgaturAcis</string>
+    <string name="action_settings">Settings</string>
+    <string-array name="android_layout_arrays">
+        <item>Makana</item>
+        <item>Minuman</item>
+        <item>Barang</item>
+        <item>Jasa</item>
+    </string-array>
+</resources>
