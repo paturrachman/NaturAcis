@@ -364,7 +364,7 @@
                                     android:layout_width="80dp"
                                     android:layout_height="80dp"
                                     android:padding="20dp"
-                                    android:src="@drawable/ic_route" />
+                                    android:src="@drawable/ic_group" />
                             </RelativeLayout>
                         </RelativeLayout>
                     </RelativeLayout>

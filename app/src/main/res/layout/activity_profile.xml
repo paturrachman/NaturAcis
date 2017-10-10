@@ -52,32 +52,91 @@
                         android:layout_weight="1"
                         android:orientation="vertical"
                         android:layout_marginRight="20dp"
-                        android:layout_marginLeft="20dp">
-                        <EditText
-                            android:id="@+id/nama"
+                        android:layout_marginLeft="20dp"
+                        android:weightSum="2">
+                        <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:drawableLeft="@drawable/ic_person_black_24dp"
-                            android:drawablePadding="12dp"
-                            android:hint="Nama Lengkap"
-                            android:padding="8dp" />
+                            android:layout_weight="1">
+                            <ImageView
+                                android:id="@+id/gnama"
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:src="@drawable/ic_person_black_24dp"/>
+                            <TextView
+                                android:id="@+id/nama"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:hint="Nama Lengkap"
+                                android:gravity="center"
+                                android:layout_marginTop="10dp"
+                                android:textSize="15dp"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_weight="1">
+                            <TextView
+                                android:id="@+id/txt_nama"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@android:color/transparent"
+                                android:layout_marginTop="0dp"
+                                android:ems="10"
+                                android:textSize="20dp" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/colorPrimaryDark"/>
+                        </LinearLayout>
                     </LinearLayout>
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:orientation="vertical"
+                        android:layout_marginRight="20dp"
                         android:layout_marginLeft="20dp"
-                        android:layout_marginRight="20dp">
-                        <EditText
-                            android:id="@+id/email"
+                        android:weightSum="2">
+                        <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:drawableLeft="@drawable/ic_email_black_24dp"
-                            android:drawablePadding="12dp"
-                            android:hint="Email"
-                            android:padding="8dp"
-                            />
+                            android:layout_weight="1">
+                            <ImageView
+                                android:id="@+id/gemail"
+                                android:layout_width="35dp"
+                                android:layout_height="40dp"
+                                android:src="@drawable/ic_email_black_24dp"/>
+                            <TextView
+                                android:id="@+id/email"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:hint="Email"
+                                android:gravity="center"
+                                android:layout_marginTop="10dp"
+                                android:textSize="15dp"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_weight="1">
+                            <TextView
+                                android:id="@+id/txt_email"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@android:color/transparent"
+                                android:layout_marginTop="0dp"
+                                android:ems="10"
+                                android:textSize="20dp" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/colorPrimaryDark"/>
+                        </LinearLayout>
                     </LinearLayout>
                 </LinearLayout>
                 <!--tiga-->
@@ -90,32 +149,95 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_marginRight="20dp"
                         android:layout_marginLeft="20dp"
-                        android:layout_marginRight="20dp">
-                        <EditText
-                            android:id="@+id/ttl"
+                        android:weightSum="2">
+                        <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:drawableLeft="@drawable/ic_date_range_black_24dp"
-                            android:drawablePadding="12dp"
-                            android:hint="Tempat Tanggal Lahir"
-                            android:padding="8dp"
-                            />
+                            android:layout_weight="1">
+                            <ImageView
+                                android:id="@+id/gttl"
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:src="@drawable/ic_date_range_black_24dp"/>
+                            <TextView
+                                android:id="@+id/ttl"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:hint="Tempat Tanggal Lahir"
+                                android:gravity="center"
+                                android:layout_marginTop="10dp"
+                                android:textSize="15dp"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_weight="1">
+                            <TextView
+                                android:id="@+id/txt_ttl"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@android:color/transparent"
+                                android:layout_marginTop="0dp"
+                                android:ems="10"
+                                android:textSize="20dp" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/colorPrimaryDark"/>
+                        </LinearLayout>
                     </LinearLayout>
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_marginRight="20dp"
                         android:layout_marginLeft="20dp"
-                        android:paddingRight="20dp">
-                        <EditText
-                            android:id="@+id/telpon"
+                        android:weightSum="2">
+                        <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:drawableLeft="@drawable/ic_contact_phone_black_24dp"
-                            android:drawablePadding="12dp"
-                            android:hint="No Telepon"
-                            android:padding="8dp" />
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:id="@+id/gphone"
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:src="@drawable/ic_contact_phone_black_24dp" />
+
+                            <TextView
+                                android:id="@+id/phone"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:hint=" No Telepon"
+                                android:gravity="center"
+                                android:layout_marginTop="10dp"
+                                android:textSize="15dp"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_weight="1">
+                            <TextView
+                                android:id="@+id/txt_telepon"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@android:color/transparent"
+                                android:layout_marginTop="0dp"
+                                android:ems="10"
+                                android:textSize="20dp" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/colorPrimaryDark"/>
+                        </LinearLayout>
                     </LinearLayout>
                 </LinearLayout>
             </LinearLayout>

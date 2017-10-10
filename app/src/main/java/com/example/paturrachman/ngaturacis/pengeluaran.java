@@ -16,7 +16,7 @@ import android.widget.Spinner;
 import android.widget.TimePicker;
 import android.widget.Toast;
 
-public class pengeluaran extends AppCompatActivity implements View.OnClickListener {
+public class pengeluaran extends AppCompatActivity {
     private Spinner spinner1;
     private Button btntanggal, btnwaktu,simpan;
     private LinearLayout parent1;
@@ -29,18 +29,11 @@ public class pengeluaran extends AppCompatActivity implements View.OnClickListen
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pengeluaran);
 
-        btntanggal = (Button) findViewById(R.id.btntanggal);
-        btnwaktu = (Button) findViewById(R.id.btnwaktu);
-        txttanggal = (EditText) findViewById(R.id.txttanggal);
-        txtwaktu = (EditText) findViewById(R.id.txtwaktu);
-        parent1 = (LinearLayout) findViewById(R.id.parent1);
         simpan = (Button) findViewById(R.id.simpan);
         txtpengeluaran = (EditText) findViewById(R.id.txtpengeluaran);
         txtketerangan = (EditText) findViewById(R.id.txtketerangan);
 
 
-        btntanggal.setOnClickListener(this);
-        btnwaktu.setOnClickListener(this);
 
         spinner1 = (Spinner) findViewById(R.id.spinner);
         spinner1.setOnItemSelectedListener(new CustomOnItemSelectedListener());
@@ -68,18 +61,7 @@ public class pengeluaran extends AppCompatActivity implements View.OnClickListen
 
 
          /*-----------------Sintax_enable_edit_text*------------------*/
-        final EditText et = (EditText) findViewById(R.id.txtwaktu);
-        final EditText et_city = (EditText) findViewById(R.id.txttanggal);
-        final EditText empat = (EditText) findViewById(R.id.editText4);
 
-        et_city.setInputType(InputType.TYPE_NULL);
-        et_city.setKeyListener(null);
-
-        et.setInputType(InputType.TYPE_NULL);
-        et.setKeyListener(null);
-
-        empat.setInputType(InputType.TYPE_NULL);
-        empat.setKeyListener(null);
         /*-----------------Sintax_enable_edit_text*------------------*/
 
     }
@@ -105,47 +87,5 @@ public class pengeluaran extends AppCompatActivity implements View.OnClickListen
 
     }
 
-    @Override
-    public void onClick(View v) {
-        switch (v.getId()) {
-            case R.id.btntanggal:
-
-                Calendar c =Calendar.getInstance();
-                mYear = c.get(Calendar.YEAR);
-                mMonth = c.get(Calendar.MONTH);
-                mDay = c.get(Calendar.DAY_OF_MONTH);
-
-
-                DatePickerDialog datePickerDialog = new DatePickerDialog(this,
-                        new DatePickerDialog.OnDateSetListener() {
-
-                            @Override
-                            public void onDateSet(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
-
-                                txttanggal.setText(dayOfMonth + "-" + (monthOfYear + 1) + "-" + year);
-
-                            }
-                        }, mYear, mMonth, mDay);
-                datePickerDialog.show();
-                break;
-            case R.id.btnwaktu:
-
-                c = Calendar.getInstance();
-                mHour = c.get(Calendar.HOUR_OF_DAY);
-                mMinute = c.get(Calendar.MINUTE);
-
-                TimePickerDialog timePickerDialog = new TimePickerDialog(this,
-                        new TimePickerDialog.OnTimeSetListener() {
-
-                            @Override
-                            public void onTimeSet(TimePicker view, int hourOfDay, int minute) {
-
-                                txtwaktu.setText(hourOfDay + ":" + minute);
-                            }
-                        }, mHour, mMinute, false);
-                timePickerDialog.show();
-                break;
-        }
-    }
 }
 

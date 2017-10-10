@@ -16,7 +16,6 @@ public class Daftar extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_daftar);
 
-        masuk1 = (Button) findViewById(R.id.login);
         daftar = (Button) findViewById(R.id.simpan);
         nama = (EditText) findViewById(R.id.nama);
         email = (EditText) findViewById(R.id.email);
@@ -43,16 +42,16 @@ public class Daftar extends AppCompatActivity {
                 }else {
                     //jika form sudah terisi semua
                     Toast.makeText(getApplicationContext(), "Registrasi Berhasil!",Toast.LENGTH_SHORT).show();
+
+
+                        Intent i = new Intent(Daftar.this, Login.class);
+                        startActivity(i);
+
+
                 }
             }
         });
 
-        masuk1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                    Intent i = new Intent(Daftar.this, Login.class);
-                    startActivity(i);
-            }
-        });
+
     }
 }

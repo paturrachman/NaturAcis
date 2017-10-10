@@ -53,39 +53,99 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_marginLeft="20dp"
-                        android:layout_marginRight="20dp"
                         android:layout_weight="1"
-                        android:orientation="vertical">
-
-                        <EditText
-                            android:id="@+id/facebook"
+                        android:orientation="vertical"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:weightSum="2">
+                        <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:drawableLeft="@drawable/ic_facebook"
-                            android:drawablePadding="12dp"
-                            android:hint="Paturrcahman"
-                            android:textSize="20dp"
-                            android:padding="8dp" />
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:id="@+id/gphone"
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:src="@drawable/ic_facebook" />
+
+                            <TextView
+                                android:id="@+id/phone"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:hint=" Facebook"
+                                android:gravity="center"
+                                android:layout_marginTop="5dp"
+                                android:textSize="20dp"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_weight="1">
+                            <TextView
+                                android:id="@+id/txt_facebook"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@android:color/transparent"
+                                android:layout_marginTop="0dp"
+                                android:ems="10"
+                                android:textSize="20dp" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/colorPrimaryDark"/>
+                        </LinearLayout>
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_marginLeft="20dp"
-                        android:layout_marginRight="20dp"
                         android:layout_weight="1"
-                        android:orientation="vertical">
-
-                        <EditText
-                            android:id="@+id/gmail"
+                        android:orientation="vertical"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:weightSum="2">
+                        <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:drawableLeft="@drawable/ic_email_black_24dp"
-                            android:drawablePadding="12dp"
-                            android:hint="Patur0857@gmail.com"
-                            android:padding="8dp"
-                            android:textSize="20dp"/>
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:id="@+id/gemail"
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:src="@drawable/ic_email_black_24dp" />
+
+                            <TextView
+                                android:id="@+id/email"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:hint=" Email"
+                                android:gravity="center"
+                                android:layout_marginTop="5dp"
+                                android:textSize="20dp"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_weight="1">
+                            <TextView
+                                android:id="@+id/txt_telepon"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@android:color/transparent"
+                                android:layout_marginTop="0dp"
+                                android:ems="10"
+                                android:textSize="20dp" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/colorPrimaryDark"/>
+                        </LinearLayout>
                     </LinearLayout>
                 </LinearLayout>
                 <!--tiga-->
@@ -98,37 +158,99 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_marginLeft="20dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
                         android:layout_marginRight="20dp"
-                        android:layout_weight="1">
-
-                        <EditText
-                            android:id="@+id/whatsapp"
+                        android:layout_marginLeft="20dp"
+                        android:weightSum="2">
+                        <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:drawableLeft="@drawable/ic_instagram"
-                            android:drawablePadding="12dp"
-                            android:hint="Ptrrachman"
-                            android:textSize="20dp"
-                            android:padding="8dp" />
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:id="@+id/ginsat"
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:src="@drawable/ic_instagram" />
+
+                            <TextView
+                                android:id="@+id/insat"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:hint=" Instargram"
+                                android:gravity="center"
+                                android:layout_marginTop="5dp"
+                                android:textSize="20dp"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_weight="1">
+                            <TextView
+                                android:id="@+id/txt_instagram"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@android:color/transparent"
+                                android:layout_marginTop="0dp"
+                                android:ems="10"
+                                android:textSize="20dp" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/colorPrimaryDark"/>
+                        </LinearLayout>
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_marginLeft="20dp"
                         android:layout_weight="1"
-                        android:paddingRight="20dp">
-
-                        <EditText
-                            android:id="@+id/call"
+                        android:orientation="vertical"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:weightSum="2">
+                        <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:drawableLeft="@drawable/ic_contact_phone_black_24dp"
-                            android:drawablePadding="12dp"
-                            android:hint="085781102159"
-                            android:padding="8dp"
-                            android:textSize="20dp" />
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:id="@+id/gnomor"
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:src="@drawable/ic_contact_phone_black_24dp" />
+
+                            <TextView
+                                android:id="@+id/txtnom"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:hint=" Nomor Telepon"
+                                android:gravity="center"
+                                android:layout_marginTop="5dp"
+                                android:textSize="20dp"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_weight="1">
+                            <TextView
+                                android:id="@+id/txt_watasupp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@android:color/transparent"
+                                android:layout_marginTop="0dp"
+                                android:ems="10"
+                                android:textSize="20dp" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/colorPrimaryDark"/>
+                        </LinearLayout>
                     </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
