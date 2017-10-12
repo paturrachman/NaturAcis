@@ -53,6 +53,7 @@
                         android:orientation="vertical"
                         android:layout_marginRight="20dp"
                         android:layout_marginLeft="20dp">
+
                         <EditText
                             android:id="@+id/nama"
                             android:layout_width="match_parent"
@@ -60,6 +61,7 @@
                             android:drawableLeft="@drawable/ic_person_black_24dp"
                             android:drawablePadding="12dp"
                             android:hint="Nama Lengkap"
+                            android:inputType="text"
                             android:padding="8dp" />
                     </LinearLayout>
                     <LinearLayout
@@ -76,6 +78,7 @@
                             android:drawableLeft="@drawable/ic_email_black_24dp"
                             android:drawablePadding="12dp"
                             android:hint="Email"
+                            android:inputType="textEmailAddress"
                             android:padding="8dp"
                             />
                     </LinearLayout>
@@ -98,6 +101,7 @@
                         android:layout_height="match_parent"
                         android:drawableLeft="@drawable/ic_date_range_black_24dp"
                         android:drawablePadding="12dp"
+                        android:inputType="date"
                         android:hint="Tempat Tanggal Lahir"
                         android:padding="8dp"
                         />
@@ -114,6 +118,7 @@
                         android:layout_height="match_parent"
                         android:drawableLeft="@drawable/ic_contact_phone_black_24dp"
                         android:drawablePadding="12dp"
+                        android:inputType="phone"
                         android:hint="No Telepon"
                         android:padding="8dp" />
                 </LinearLayout>
@@ -153,7 +158,7 @@
                             android:drawableLeft="@drawable/ic_https_black_24dp"
                             android:drawablePadding="12dp"
                             android:hint="Password"
-                            android:inputType="textPassword"
+                            android:inputType="text"
                             android:padding="8dp" />
                     </LinearLayout>
                 </LinearLayout>
@@ -162,16 +167,18 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="2"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
                     android:weightSum="2"
                     android:orientation="horizontal">
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:padding="20dp"
-                        >
+                        android:paddingTop="25dp"
+                        android:paddingBottom="25dp">
                         <Button
-                            android:id="@+id/simpan"
+                            android:id="@+id/daftar1"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:background="@color/colorPrimary"
